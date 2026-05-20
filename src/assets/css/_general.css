@@ -1,0 +1,84 @@
+/*  */
+
+@layer base {
+    html {
+        @apply scroll-smooth w-full;
+    }
+
+    body {
+        @apply font-body bg-body-bg text-body-color text-md leading-normal;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply leading-tight font-bold font-heading text-default-950;
+    }
+
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        @apply cursor-pointer;
+    }
+}
+
+select,
+input,
+textarea {
+    @apply transition-all bg-body-bg duration-200 focus:border-border focus:ring-0 focus:outline-0;
+}
+
+.container-fluid {
+    @apply lg:max-w-[1905px] lg:px-12 px-4;
+}
+
+.container {
+    @apply mx-auto lg:max-w-[1300px] max-w-[722px] px-3.5;
+}
+
+.shadow-custom{
+    box-shadow: 0 0 40px rgba(29,58,83,0.15);
+}
+
+/* Navbar Active Link */
+header #navbar .active {
+    @apply text-primary bg-primary/10;
+}
+
+#sidebar-offcanvas #navbar .active {
+    @apply bg-primary text-white;
+}
+
+.animate-ripple {
+    animation: ripple 1.5s infinite;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* for Strip Animate Progress bar */
+@keyframes progress-stripes {
+    from {
+        background-position: 1rem 0;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}

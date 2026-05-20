@@ -1,0 +1,130 @@
+/*
+Template Name: Mizzle - Technology and Corporate Tailwind CSS Template
+Version: 1.0.0
+Author: StackBros
+File: Style CSS File
+*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Swiper CSS */
+@import "swiper/swiper-bundle.css";
+
+/* TailwindCSS */
+@import "tailwindcss";
+
+/* Plugin */
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms"; 
+
+/* Preline UI */
+@import "preline/variants.css";
+@source "preline/dist/*.js";
+
+
+/* Iconify Icons */
+/* @plugin "@iconify/tailwind4" {
+    prefixes: tabler, lucide;
+} */
+
+/* Themes Config */
+@theme {
+
+    --font-body: "Roboto", sans-serif;
+    --font-heading: "Heebo", sans-serif;
+
+    --color-body-bg: #fff;
+    --color-dropdown: #fff;
+    --color-card:#fff;
+    --color-body-color:#747579;
+    --color-border:#dde0e3;
+
+    --color-primary: #066ac9;
+    --color-primary-hover: #055aab;
+
+    --color-secondary: #9a9ea4;
+
+    --color-success: #0cbc87;
+    --color-success-hover: #0aa073;
+
+    --color-info: #17a2b8;
+    --color-warning: #f7c32e;
+
+    --color-danger: #d6293e;
+    --color-danger-hover: #b62335;
+
+    --color-light: #f5f7f9;
+    --color-light-hover:#eff1f2;
+
+    --color-purple:#6f42c1;
+
+    --color-blue:#1d3b53;
+    --color-blue-hover:#193247;
+
+    --color-dark: #24292d;
+    --color-dark-hover:#45494d;
+
+    --color-orange: #fd7e14;
+    --color-orange-hover: #d76b11;
+
+    --color-default-50: var(--color-neutral-50);
+    --color-default-100: var(--color-neutral-100);
+    --color-default-200: var(--color-neutral-200);
+    --color-default-300: var(--color-neutral-300);
+    --color-default-400: var(--color-neutral-400);
+    --color-default-500: var(--color-neutral-500);
+    --color-default-600: #747579;
+    --color-default-700: var(--color-neutral-700);
+    --color-default-800: var(--color-neutral-800);
+    --color-default-900: var(--color-neutral-900);
+    --color-default-950: var(--color-neutral-950);
+}
+
+.dark {
+    color-scheme: dark;
+
+    --color-body-bg: #222529;
+    --color-dropdown: #0f0f10;
+    --color-card:#1b1e21;
+    --color-body-color:#a1a1a8;
+    --color-border:#3e3e40;
+
+    --color-dark:#0f0f10;
+    
+    --color-light:#2a2c31;
+    --color-light-hover:#464950;
+
+    --color-default-50: var(--color-zinc-950);
+    --color-default-100:var(--color-zinc-900);
+    --color-default-200: var(--color-zinc-800);
+    --color-default-300: var(--color-zinc-700);
+    --color-default-400: var(--color-zinc-600);
+    --color-default-500: var(--color-zinc-500);
+    --color-default-600: #c5c6cc;
+    --color-default-700: var(--color-zinc-300);
+    --color-default-800: var(--color-zinc-200);
+    --color-default-900: var(--color-zinc-100);
+    --color-default-950: var(--color-zinc-50);
+}
+@theme {
+    --text-2xs:13px;
+    --text-md:15px;
+    --text-2_5xl:21px;
+    --text-2_6xl:26px;
+    --text-5_5xl:56px;
+    --text-1_5xl:18.75px;
+    --text-4_5xl:44px;
+    --text-3_5xl:34px;
+}
+
+@custom-variant light (&:where(.light, .light *));
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "./_general.css";
+@import "./_swiper.css";
+@import "./_plyr.css";
+
+/* @import "quill/dist/quill.bubble.css";
+@import "quill/dist/quill.core.css";
+@import "quill/dist/quill.snow.css";
+@import "./_quill-editor.css"; */
